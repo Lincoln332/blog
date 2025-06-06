@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Favorite Local Park</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  header, nav, article, footer {
+    margin-bottom: 20px;
+  }
+  nav a {
+    margin-right: 15px;
+    color: blue;
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Media Query 1: Relocate nav below header on small screens */
+  @media (max-width: 600px) {
+    nav {
+      order: 2;
+    }
+    header {
+      order: 1;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  /* Media Query 2: Hide image on small screens */
+  @media (max-width: 400px) {
+    img {
+      display: none;
+    }
+  }
+  /* Media Query 3: Printer friendly */
+  @media print {
+    nav, footer {
+      display: none;
+    }
+    body {
+      font-size: 12pt;
+      color: black;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>My Favorite Local Park</h1>
+</header>
+<nav>
+  <a href="#">Older Post 1</a>
+  <a href="#">Older Post 2</a>
+  <a href="#">Older Post 3</a>
+</nav>
+<article>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/City_park_in_Spring.JPG/640px-City_park_in_Spring.JPG" alt="Local Park" />
+  <p>
+    I love spending time at the local park. It’s a great place to relax, play basketball, and have picnics. The park has a cool playground, lots of trees, and a pond where ducks swim.
+  </p>
+  <p>
+    Every spring, the park hosts a community fair that brings everyone together. I usually go with my friends and family. It’s awesome!
+  </p>
+</article>
+<footer>
+  <p>© 2025 Lincoln's Blog</p>
+</footer>
+</body>
+</html>
